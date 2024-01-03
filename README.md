@@ -31,7 +31,7 @@ TODO: Instantiate an object which represents cola. Make sure that the color is s
  print the getInfo on the screen.
 TODO: Print the temperature on the screen.
 
-/* EXERCISE 2
+## exercice 2 : extending
 
 TODO: Make class beer that extends from Beverage.
 TODO: Create the properties name (string) and alcoholPercentage (float).
@@ -46,7 +46,7 @@ TODO: Print the getAlcoholPercentage 2 times on the screen in two different ways
 Make sure that each print is on a different line.
 Try to get this error on the screen= Fatal error: Uncaught Error: Call to undefined method Beverage::getAlcoholPercentage() in /var/www/becode/workshop/exercise2.php on line 64
 
-/* EXERCISE 3
+## exercice 3 : private
 
 TODO: Copy the code of exercise 2 to here and delete everything related to cola.
 TODO: Make all properties private.
@@ -56,7 +56,7 @@ TODO: Create a new private method in the Beer class called beerInfo which return
 
 Make sure that you use the variables and not just this text line.
 
-/* EXERCISE 4
+## exercice 4 : protected
 
 Copy the code of exercise 3 to here and delete everything related to cola.
 
@@ -64,7 +64,7 @@ TODO: Make all properties protected.
 TODO: Make all the other prints work without error without changing the beverage class.
 TODO: Don't call getters in de child class.
 
-/* EXERCISE 5
+## exercice 5 : public
 
 Copy the class of exercise 1.
 
@@ -72,7 +72,7 @@ TODO: Change the properties to private.
 TODO: Fix the errors without using getter and setter functions.
 TODO: Change the price to 3.5 euro and print it also on the screen on a new line.
 
-/* EXERCISE 6
+## exercice 6 : const
 
 Copy the classes of exercise 2.
 
@@ -84,7 +84,7 @@ TODO: Do the same in the beer class.
 TODO: Print the output of these functions on the screen.
 TODO: Make sure that every print is on a new line.
 
-/* EXERCISE 7
+## exercice 7 : static
 
 Copy your solution from exercise 6
 

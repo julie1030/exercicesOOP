@@ -1,16 +1,15 @@
 
 // je déclare une classe nommée:
 class Boisson {
-  constructor(couleur="inconnue", prix= 0.0) {
-    this.couleur = couleur;
-    this.prix = prix;
+  constructor(color = "inconnue", price = 0.0) {
+    this.color = color;
+    this.price = price;
     this.temperature = "froide";
   }
 
-
-getInfo () {
-    return `Cette boisson est ${this.temperature} et elle est ${this.couleur}.`;
-}
+  getInfo() {
+    return `Cette boisson est ${this.temperature} et elle est ${this.color}.`;
+  }
 };
 
 // TODO: Instantiate an object representing cola with specific properties
@@ -25,9 +24,9 @@ console.log(`Temperature: ${cola.temperature}`);
 /* EXERCISE 2 */
 
 class Biere extends Boisson {
-constructor(nom="inconnu", pourcentageOh=0.0, couleur="inconnue", prix=0.0, temperature= "froid")
-{super(couleur, prix, temperature);
-this.nom=nom;
+constructor(name="inconnu", pourcentageOh=0.0, color="inconnue", price=0.0, temperature= "cold")
+{super(color, price, temperature);
+this.name=name;
 this.pourcentageOh=pourcentageOh;
 }
 getPourcentageOh() {

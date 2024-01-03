@@ -1,21 +1,19 @@
-
-
-class Boisson {
-  // Properties are made private
-  #color;
-  #price;
-  #temperature;
+class Beverage {
+  // Properties are made protected
+  _color;
+  _price;
+  _temperature;
 
   // Constructor with default value "cold" for temperature
   constructor(color, price) {
-    this.#color = color;
-    this.#price = price;
-    this.#temperature = "cold";
+    this._color = color;
+    this._price = price;
+    this._temperature = "cold";
   }
 
   // getInfo method
   getInfo() {
-    return `This beverage is ${this.#temperature} and ${this.#color} and ${this.#price}.`;
+    return `This beverage is ${this._temperature} and ${this._color} and ${this._price}.`;
   }
 }
 
@@ -39,12 +37,7 @@ class Beer extends Beverage {
   #beerInfo() {
     return `Hi, I'm ${this.#name} and have an alcohol percentage of ${
       this.#pourcentageOh
-    } and I have a ${this.#color} color.`;
-  }
-
-  // Getter for pourcentageOh
-  getPourcentageOh() {
-    return this.#pourcentageOh;
+    } and I have a ${this._color} color.`; // Use protected property
   }
 
   // Overriding getInfo method from Beverage
@@ -56,18 +49,17 @@ class Beer extends Beverage {
 // Instantiation of the object representing Duvel
 const duvel = new Beer("Duvel", 8.5, "light", 3.5);
 
-// Printing alcohol percentage using both methods
-console.log(`Alcohol Percentage: ${duvel.getPourcentageOh()}`);
+// Printing alcohol percentage without calling getters in the child class
 console.log(`Alcohol Percentage: ${duvel.#pourcentageOh}`); // Error: private property
 
-// Printing color on the screen
-console.log(`Color: ${duvel.#color}`); // Error: private property
+// Printing color on the screen without calling getters in the child class
+console.log(`Color: ${duvel._color}`); // Use protected property
 
 // Printing information using the getInfo method of the Beverage class
 console.log(duvel.getInfo());
 
 // Changing the color of Duvel to "light"
-duvel.#color = "light";
+duvel._color = "light"; // Use protected property
 
 // Printing the new color after the changes
-console.log(`New Color: ${duvel.#color}`);
+console.log(`New Color: ${duvel._color}`);

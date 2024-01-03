@@ -16,11 +16,7 @@ class MyClass {
   // ...
 }
 ## exercice 1 : classes
-<?php
 
-declare(strict_types=1);
-
-/* EXERCISE 1
 TODO: Create a class beverage.
 TODO: Create the properties color (string), price (float) and temperature (string) and also foresee a construct.
 TODO: Have a default value "cold" in the construct for temperature.
